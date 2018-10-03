@@ -1,0 +1,241 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: helvetica, sans-serif;
+}
+
+
+/* NAV STYLE */
+nav {
+  height: 40px;
+  width: 100%;
+  background-color: #333;
+  color: #eee;
+  position: fixed;
+  z-index: 1;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+nav li {
+  display: inline;
+  float: left;
+  padding: 0 10px;
+}
+nav a {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 0;
+  color: #eee;
+  text-decoration: none;
+}
+
+nav li:hover {
+  background-color: #444;
+}
+nav a#openup {
+  display: none;
+}
+
+/* MAIN IMAGE SHOWCASE */
+.section-main {
+  background: url('../images/main-header.jpg');
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  top: 20px;
+}
+
+.section-main #container {
+  z-index: -1;
+}
+
+.section-main h1 {
+  position: absolute;
+  top: 75px;
+  font-weight: 300;
+  font-size: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-main h2 {
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.section-main .btn-group{
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-main #info-btn {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+  margin: 10px;
+  border: 2px solid #fff;
+
+}
+
+.section-main #buy-btn {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+  margin-left: 15px;
+  border: 2px solid #fff;
+}
+
+.section-main #info-btn:hover {
+  color: #000;
+  background: #fff;
+  transition: ease-in-out 200ms;
+}
+
+.section-main #buy-btn:hover {
+  color: #000;
+  background: #fff;
+  transition: ease-in-out 200ms;
+}
+
+/* SUBSCRIPTION SECTION */
+#subscription-section {
+  background-image: url('../images/subscribe-img.jpg');
+  height: 240px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#subscription-section #subscription-heading {
+  position: absolute;
+  margin-top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+#subscription-section form {
+  position: absolute;
+  margin-top: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#subscribe-form {
+  width: 400px;
+  height: 28px;
+  font-size: 1.3rem;
+  margin-right: 5px;
+  background: none;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+#subscribe-form:focus {
+  outline: none;
+}
+
+#subscription-section form .submit-btn {
+  width: 90px;
+  height: 35px;
+  margin-left: 5px;
+  background: none;
+  color: #fff;
+  font-size: 1rem;
+  border: 2px solid #fff;
+  transform: translateY(-2px);
+}
+
+#subscription-section form .submit-btn:hover {
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: ease-in-out 200ms;
+}
+/* MEDIA QUERY */
+
+@media screen and (max-width: 768px) {
+  .hide-on-small {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2.8em;
+  }
+
+  /* NAV MEDIA QUERY STYLE */
+  nav {
+    height: auto;
+    border-bottom: 0;
+  }
+  nav ul {
+    display: none;
+    height: auto;
+    position: relative;
+  }
+  nav li {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+  nav a {
+    text-align: left;
+    width: 100%;
+    text-indent: 25px;
+    background: #333;
+    border-bottom: 1px solid #555;
+  }
+  nav a:hover {
+    background: #444;
+  }
+  nav a#openup:after {
+    content: "|||";
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-90deg);
+    /* Safari and Chrome */
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 20px;
+  }
+  nav a#openup {
+    display: block;
+    background-color: #333;
+    width: 100%;
+    position: relative;
+  }
+}
+.cf:before, .cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
