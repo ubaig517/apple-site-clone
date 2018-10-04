@@ -261,16 +261,14 @@ nav a#openup {
 
 /* TECH GALLERY SECTION */
 #tech-gallery {
-
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
-.tech-item h1, h3, #item-btn-group{
-  text-align: center;
+.tech-item img{
+  width: 100%;
 }
 
-#ipod-item {
-  position: absolute;
-}
 
 /* MEDIA QUERY */
 
