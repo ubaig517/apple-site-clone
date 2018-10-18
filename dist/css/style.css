@@ -55,7 +55,7 @@ nav a#openup {
 }
 
 .section-main #container {
-  z-index: -1;
+  z-index: 0;
 }
 
 .section-main h1 {
@@ -127,7 +127,7 @@ nav a#openup {
   margin-top: 60px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #fff;
   font-weight: 400;
 }
@@ -198,7 +198,7 @@ nav a#openup {
   text-align: center;
   position: relative;
   float: right;
-  right: 200px;
+  right: 5%;
   top: 50%;
   transform: translateY(-50%);
   color: #444;
@@ -265,8 +265,31 @@ nav a#openup {
   grid-template-columns: auto auto;
 }
 
+.tech-item {
+  position: relative;
+}
+
 .tech-item img{
   width: 100%;
+  z-index: -1;
+}
+
+.item-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+  text-align: center;
+}
+
+.item-text h3 {
+  font-weight: 300;
+
+}
+
+#music-item h1, #music-item h3,
+#macbook-item h1, #macbook-item h3{
+  color: #fff;
 }
 
 
