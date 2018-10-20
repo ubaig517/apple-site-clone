@@ -1,9 +1,42 @@
+/* GENERAL STYLES */
+html,
 body {
-  margin: 0;
-  padding: 0;
-  font-family: helvetica, sans-serif;
+margin: 0;
+padding: 0;
+font-family: helvetica, sans-serif;
 }
 
+.info-btn {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  margin: 10px;
+  border: 2px solid #fff;
+}
+
+.buy-btn {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  margin-left: 15px;
+  border: 2px solid #fff;
+}
+
+.info-btn:hover {
+  color: #000;
+  background: #fff;
+  transition: ease-in-out 300ms;
+}
+
+.buy-btn:hover {
+  color: #000;
+  background: #fff;
+  transition: ease-in-out 300ms;
+}
+
+#showcase {
+  margin: -15px 0;
+}
 
 /* NAV STYLE */
 nav {
@@ -13,6 +46,7 @@ nav {
   color: #eee;
   position: fixed;
   z-index: 1;
+  margin: 0;
 }
 nav ul {
   padding: 0;
@@ -50,66 +84,31 @@ nav a#openup {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #fff;
-  top: 20px;
+  text-align: center;
+  width: 100;
 }
 
-.section-main #container {
+.section-main #main-text {
   z-index: 0;
+  position: relative;
+  top: 75px;
+  color: #fff;
 }
 
-.section-main h1 {
-  position: absolute;
-  top: 75px;
+#main-text h1 {
   font-weight: 300;
   font-size: 3rem;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 15px;
 }
 
-.section-main h2 {
-  position: absolute;
-  top: 140px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 1.6rem;
+#main-text h2 {
+  font-size: 1.5rem;
   font-weight: 300;
+  margin: 15px;
 }
 
-.section-main .btn-group{
-  position: absolute;
-  top: 220px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.section-main .info-btn {
-  color: #fff;
-  text-decoration: none;
-  padding: 15px;
-  margin: 10px;
-  border: 2px solid #fff;
-
-}
-
-.section-main .buy-btn {
-  color: #fff;
-  text-decoration: none;
-  padding: 15px;
-  margin-left: 15px;
-  border: 2px solid #fff;
-}
-
-.section-main .info-btn:hover {
-  color: #000;
-  background: #fff;
-  transition: ease-in-out 200ms;
-}
-
-.section-main .buy-btn:hover {
-  color: #000;
-  background: #fff;
-  transition: ease-in-out 200ms;
+#main-text .btn-group{
+  margin: 40px;
 }
 
 /* SUBSCRIPTION SECTION */
@@ -187,18 +186,19 @@ nav a#openup {
 /* WATCH SECTION */
 
 #watch-section {
+  background: url('../images/watch-section3.jpg');
   height: 700px;
-  background: url('../images/watch-section2.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+
 #watch-container {
   text-align: center;
   position: relative;
   float: right;
-  right: 5%;
+  right: 20%;
   top: 50%;
   transform: translateY(-50%);
   color: #444;
@@ -211,7 +211,7 @@ nav a#openup {
   margin: 10px;
 }
 
-#watch-container h3#edition {
+#watch-container #edition {
   text-transform: uppercase;
   font-size: 1.8rem;
   font-weight: 400;
@@ -220,7 +220,6 @@ nav a#openup {
 }
 
 #watch-container h3 {
-  text-transform: uppercase;
   font-size: 1.6rem;
   font-weight: 200;
   margin: 20px 10px;
@@ -232,31 +231,23 @@ nav a#openup {
 
 #watch-section .info-btn {
   color: #444;
-  text-decoration: none;
-  padding: 15px;
-  margin: 10px;
   border: 2px solid #444;
 
 }
 
 #watch-section .buy-btn {
   color: #444;
-  text-decoration: none;
-  padding: 15px;
-  margin-left: 15px;
   border: 2px solid #444;
 }
 
 #watch-section .info-btn:hover {
   color: #fff;
   background: #444;
-  transition: ease-in-out 200ms;
 }
 
 #watch-section .buy-btn:hover {
   color: #fff;
   background: #444;
-  transition: ease-in-out 200ms;
 }
 
 /* TECH GALLERY SECTION */
@@ -271,25 +262,150 @@ nav a#openup {
 
 .tech-item img{
   width: 100%;
-  z-index: -1;
 }
 
 .item-text {
   position: absolute;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 0;
   text-align: center;
 }
 
+.item-text h1 {
+  font-weight: 400;
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
 .item-text h3 {
   font-weight: 300;
+  margin: 10px 0;
+}
 
+.item-btn-group {
+  margin: 35px 0;
+}
+
+.item-btn-group a {
+  border: 2px solid #0288D1;
+  color: #0288D1;
+}
+
+.item-btn-group a:hover {
+  background: #0288D1;
+  color: #fff;
 }
 
 #music-item h1, #music-item h3,
 #macbook-item h1, #macbook-item h3{
   color: #fff;
+}
+
+#music-item a {
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+#music-item a:hover {
+  color: #000;
+  background: #fff;
+}
+
+#macbook-item a:hover {
+  color: #000;
+}
+
+/* IPAD SECTION */
+#ipad-section {
+  background: url('../images/ipad-section.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  text-align: center;
+}
+
+#ipad-text {
+  position: relative;
+  top: 50px;
+}
+
+#ipad-text h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+#ipad-text #edition {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #E65100;
+  margin: 15px 0;
+}
+
+#ipad-text h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+.ipad-btn-group {
+  margin: 40px 0;
+}
+
+#ipad-text a {
+  color: #000;
+  border: 2px solid #000;
+}
+
+#ipad-text a:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* FOOTER STYLES */
+footer .container {
+  background: #333;
+}
+
+footer .footer-cols {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2rem;
+  text-align: left;
+  font-size: 14px;
+}
+
+footer .footer-cols ul {
+  list-style: none;
+}
+
+footer .footer-cols li a {
+  text-decoration: none;
+  color: #666;
+}
+
+footer .footer-cols li a:hover {
+  color: #888;
+}
+
+footer .footer-cols ul li:first-child {
+  color: #fff;
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #666;
+  margin-bottom: 1rem;
+}
+
+footer .footer-bottom {
+  text-align: center;
+  color: #666;
+  background: #111;
+  padding: 1rem;
 }
 
 
