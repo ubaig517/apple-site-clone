@@ -9,16 +9,16 @@ font-family: helvetica, sans-serif;
 .info-btn {
   color: #fff;
   text-decoration: none;
-  padding: 5px;
-  margin: 10px;
+  padding: 10px;
+  margin-right: 10px;
   border: 2px solid #fff;
 }
 
 .buy-btn {
   color: #fff;
   text-decoration: none;
-  padding: 5px;
-  margin-left: 15px;
+  padding: 10px;
+  margin-left: 10px;
   border: 2px solid #fff;
 }
 
@@ -266,7 +266,7 @@ nav a#openup {
 
 .item-text {
   position: absolute;
-  top: 20px;
+  top: 15px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 0;
@@ -276,21 +276,23 @@ nav a#openup {
 .item-text h1 {
   font-weight: 400;
   font-size: 2rem;
-  margin: 10px 0;
+  margin: 0 10px 0 0;
 }
 
 .item-text h3 {
   font-weight: 300;
+  font-size: 1.2rem;
   margin: 10px 0;
 }
 
 .item-btn-group {
-  margin: 35px 0;
+  margin: 20px 0;
 }
 
 .item-btn-group a {
   border: 2px solid #0288D1;
   color: #0288D1;
+  padding: 5px;
 }
 
 .item-btn-group a:hover {
@@ -406,6 +408,41 @@ footer .footer-bottom {
   color: #666;
   background: #111;
   padding: 1rem;
+}
+
+/* FOOTER SOCIAL MEDIA LINKS */
+#social-icons {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 5px;
+  grid-column-gap: 5px;
+  padding-top: 15px;
+  justify-content: space-around;
+}
+
+#social-icons div {
+  display: inline-block;
+}
+
+#social-icons a {
+  font-size: 3rem;
+  padding: 5px;
+}
+
+#facebook a {
+  color: #3B5998;
+}
+
+#instagram a {
+  color: #cd486b;
+}
+
+#twitter a {
+  color: #1DA1F2;
+}
+
+#youtube a {
+  color: #ff0000;
 }
 
 
